@@ -1,0 +1,845 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+    /* This is for the simplified section */
+.top-information {
+    background-color: #0d1884;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.top-information a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+    /* This is for the nav, ul and links in the header */
+.header-link-nav {
+    position: sticky;
+    top: 0;
+    z-index: 4000;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+img {
+    z-index: 1;
+}
+
+.header-link-nav ul{
+    margin-top: 10px;
+    display: inline-flex;
+    background: white;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding-top: 20px;
+    margin-top: -16px;
+    z-index: 3000;
+}
+
+.header-link-nav li {
+    list-style: none;
+}
+
+.header-link-nav li a{
+    color: #6e727f;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.header-link-nav ul a:hover{
+    transition: 1s;
+    color: #0d1884;
+}
+
+    /* This is for the savings and the links under it */
+.header-link-nav ul .arrow{
+    width: 13px;
+    margin-left: -1px;
+    margin-left: 5px;
+}
+
+.header-link-nav label p{
+    color: #6e727f;
+}
+
+.header-link-nav ul label{
+    display: inline-flex;
+    margin-left: 30px;
+}
+
+.header-link-nav .dropdown-content {
+    width: auto;
+    height: auto;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    background-color: white;
+    z-index: 1000;
+    margin-top: 100px;
+    border: 1px solid rgba(0,0,0,.15);
+    display: block;
+    border-radius: .25rem;
+    margin-left: -80px;
+    margin-top: 0px;
+    margin-top: 50px;
+    margin-right: -80px;
+    margin-bottom: -190px;
+    display: none;
+}
+
+.header-link-nav .dropdown-content a{
+    color: #6e727f;
+    width: 150px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    padding-left: 7px;
+    display: block;
+
+}
+
+.header-link-nav ul #service:checked ~ .dropdown-content{
+    display: block;
+}
+
+.header-link-nav input[type="checkbox"] {
+    display: none;
+}
+
+.header-link-nav .dropdown-content a:hover {
+    color: #6e727f;
+    background-color: lavender;
+}
+
+.header-link-nav .about {
+    margin-left: 300px;
+}
+
+.header-link-nav .header-li {
+    margin-top: 12px;
+}
+
+.header-link-nav .account-li {
+    margin-top: 15px;
+}
+
+/* This is for the head link */
+.header-link-nav .account {
+    background-color: #0d1884;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.header-link-nav .account:hover {
+    background-color: #182be3;
+    color: white;
+}
+
+.header-link-nav img{
+    width: 200px;
+    margin-left: 50px;
+}
+
+    /* This is for the menu bar that will show when the width of the screen is small */
+.menu-container {
+    background: white;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 80px;  
+    position: sticky;
+    top: 0;
+    z-index: 4000;
+    display: none;
+}
+
+    /* This is to style the logo in the responsive menu bar */
+.menu-container a > img {
+    width: 200px;
+    margin-left: 7%;
+    margin-top: 10px;
+}
+
+.menu-container li{
+    list-style: none;
+}
+
+.menu-container a{
+    text-decoration: none;
+}
+
+    /* This is to make the cancel icon not to display */
+#cancel {
+    display: none;
+}
+
+    /* This is to make the responsive nav bar not to diaplay */
+.header-link-nav2 {
+    display: none;
+}
+
+
+.check:hover {
+    cursor: pointer;
+}
+
+    /* This is for when the menu icon is clicked, the cancel icon should display */
+#check:checked ~ label #cancel{
+    display: block;
+}
+
+    /* This is for when the menu icon is clicked, the nav bar shoould display */
+#check:checked ~ .header-link-nav2{
+    display: block;
+}
+
+    /* This is for when the menu icon is clicked, the menu bar should not display */
+#check:checked ~ label #menu{
+    display: none;
+}
+
+    /* This to style the responsive nav bar */
+.header-link-nav2 {
+    width: 88%;
+    height: 364%;
+    background: white;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    margin-left: 7%;
+    border-top: 1px solid #182be3;
+    border-bottom: 1px solid #182be3;
+}
+
+.horizontal-line {
+    width: 100%;
+    height: 1px;
+    background-color: #182be3;
+}
+
+.header-link-nav2 a, label p{
+    color: #6e727f;
+}
+
+.header-link-nav2 label p{
+    margin-left: 2%;
+}
+
+.header-link-nav2 li{
+    margin-left: 3%;
+    margin-top: 20px;
+}
+
+.header-link-nav2 .header-li-about {
+    padding-top: 15px;
+}
+
+.header-link-nav2 .account-li {
+    margin-left: 2%;
+}
+
+.header-link-nav2 .account {
+    background-color: #0d1884;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.header-link-nav2 .account:hover {
+    background-color: #182be3;
+    color: white;
+}
+
+    /* This is to position the menu and cancel icon */
+.check {
+    float: right;
+    margin-right: 5%;
+    margin-top: 20px;
+}
+
+    /* This is to style the dropdown under the services */
+.header-link-nav2 .dropdown-content {
+    width: 150px;
+    height: auto;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    background-color: white;
+    z-index: 1000;
+    border: 1px solid rgba(0,0,0,.15);
+    display: block;
+    border-radius: .25rem;
+    display: none;
+    margin-left: 3%;
+    margin-bottom: -180px;
+}
+
+    /* This is to style the dropdown link under the services */
+.header-link-nav2 .dropdown-content a{
+    color: #6e727f;
+    width: 140px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    padding-left: 7px;
+    display: block;
+
+}
+
+.header-link-nav2 .dropdown-content a:hover{
+    background-color: lavender;
+}
+
+    /* This is for when the services is clicked, the dropdown link should display */
+.header-link-nav2 ul #services:checked ~ .dropdown-content{
+    display: block;
+}
+
+.header-link-nav2 ul #services:checked ~ .header-li-hide{
+    display: none;
+}
+
+.header-link-nav2 ul #services:checked ~ .horizontal-line{
+    display: none;
+}
+
+.menu-container input[type="checkbox"] {
+    display: none;
+}
+
+.header-link-nav .sponsorship {
+    color: #0d1884;
+}
+
+.header-link-nav2 label p{
+    text-align: left;
+}
+
+    /* This is for style the invest right section */
+.main-banner-content-left {
+    margin-top: 100px;
+}
+
+.main-banner-content {
+    display: inline-flex;
+    margin-left: 8%;
+}
+
+.main-banner-content  h1{
+    color: #0d1884;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 30px;
+}
+
+.main-banner-content p{
+    line-height: 1.8;
+    color: #6e727f;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.main-banner-content-left-p1 {
+    width: 330px;
+}
+
+.main-banner-content-left-p2 {
+    width: 93%;
+}
+
+.main-banner-content .start-p{
+    margin-top: 40px;
+}
+
+.main-banner-content a{
+    color: #0d1884;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 1px solid #0d1884;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.main-banner-content a:hover {
+    transition: 1s;
+    background-color: #0d1884;
+    border: 1px solid #0d1884;
+    color: white;
+}
+
+.main-banner-content-right img{
+    width: 700px;
+}
+
+    /* This is for styling the sponsor with confidence section */
+.section-head {
+    margin-top: 200px;
+}
+
+.section-head h2{
+    color: #0d1884;
+    font-size: 36px;
+    font-family: "Roboto", sans-serif;
+}
+
+.section-head p{
+    font-size: 16px;
+    color: #6e727f;
+    font-family: "Open sans", sans-serif;
+}
+
+
+    /* This is for styling the agro sponsorship section */
+.agro-sponsorship-content {
+    display: inline-flex;
+    margin-left: 8%;
+    margin-top: 130px;
+}
+
+.agro-sponsorship-content img{
+    width: 500px;
+    margin-right: 50px;
+}
+
+.agro-sponsorship-content-right {
+    margin-top: 50px;
+}
+
+.agro-sponsorship-content h3{
+    font-size: 36px;
+    font-family: "Roboto" sans-serif;
+    color: #0d1884;
+    font-weight: bold;
+}
+
+.agro-sponsorship-content p{
+    font-size: 16px;
+    color: #6e727f;
+    font-family: "Open sans", sans-serif;
+}
+
+.agro-sponsorship-content-p {
+    width: 76%;
+}
+
+.agro-sponsorship-content .agro-p{
+    margin-top: 50px;
+}
+
+.agro-sponsorship-content .agro-sponsorship-content-right .agro-p a{
+    color: #0d1884;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 1px solid #0d1884;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.agro-sponsorship-content .agro-sponsorship-content-right .agro-p a:hover{
+    background-color: #0d1884;
+    border: 1px solid #0d1884;
+    color: white;
+}
+
+    /* This is for styling the arrow that if clicked it will scroll up */
+.arrowup-div {
+    height: 980px;
+    width: 45px;
+    float: right;
+    margin-right: 30px;
+    margin-top: -1000px;
+}
+
+.arrowup-div i{
+    float: right;
+    margin-top: -60px;
+    margin-right: 0px;
+    color: white;
+    background-color: black;
+    border-radius: 100px;
+    font-size: 26px;
+    padding: 10px;
+    position: sticky;
+    margin-left: 100px;
+    top: 550px;
+
+}
+
+.arrowup-div i:hover {
+    background-color: #182be3;
+}
+
+/* This is for syling the downloading of reaprite */
+.download-content {
+    background-image: url(./Images/customer-bg.jpg);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-top: 60px;
+    width: 85%;
+    margin-left: 7%;
+    display: inline-flex;
+}
+
+.download-content-left {
+    margin-left: 200px;
+}
+
+.download-content-left h3{
+    font-size: 38px;
+    color: #0d1884;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.download-content-right {
+    display: inline-flex;
+}
+
+.download-content-right i{
+    color: #0d1884;
+    font-size: 35px;
+}
+
+.download-content-right p:nth-child(1){
+    color: #0d1884;
+    font-size: 10px;
+}
+
+.apple-download {
+    margin-right: 60px;
+}
+
+.apple-download-text {
+    margin-left: 15px;
+}
+
+.apple-download-text p:nth-child(1){
+    margin-left: -20px;
+}
+
+.download-content-right {
+    margin-left: 150px;
+    margin-top: 40px;
+}
+
+.download-content-right .apple-download, .googleplay-download{
+    padding-left: 15px;
+    height: 50px;
+    padding-top: 10px;
+    padding-right: 15px;
+    border-radius: 5px;
+}
+
+.download-content-right .apple-download:hover, .googleplay-download:hover{
+    cursor: pointer;
+    transition: 1s;
+    background-color: #0d1884;
+}
+
+.apple-download:hover i{
+    color: white;
+}
+
+.apple-download:hover .apple-download-text p{
+    color: white;
+}
+
+.googleplay-download:hover i{
+    color: white;
+}
+
+.googleplay-download:hover .googleplay-download-text p{
+    color: white;
+}
+
+.download-content-right p:nth-child(2){
+    font-size: 14px;
+    font-weight: 500;
+    color: #0d1884;;
+}
+
+.googleplay-download-text {
+    margin-left: 15px;
+}
+
+.googleplay-download-text p:nth-child(1){
+    margin-left: -10px;
+}
+
+.apple-download, .googleplay-download{
+    display: inline-flex;
+}
+
+
+    /* This is for styling the elements in the footer */
+.footer-container {
+    display: inline-flex;
+    margin-top: 70px;
+    margin-left: 10%;
+}
+
+.footer-content-div {
+    display: inline-flex;
+}
+
+.footer-container a:hover{
+    text-decoration: underline;
+}
+
+.footer-container a{
+    color: #6e727f;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.footer-container h3{
+    font-size: 18px;
+    color: #6e727f;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+.footer-container .hours{
+    color: #6e727f;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.footer-container .footer-p{
+    margin-left: -1px;
+}
+
+.company-content, .products-content, .resources-content{
+    margin-right: 170px;
+}
+
+.address-content p{
+    color: #6e727f;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 9%;
+    margin-top: 60px;
+}
+
+.social-media-handle {
+    margin-left: 9%;
+    margin-top: 30px;
+}
+
+footer .social-media-handle i{
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 1px solid #0d1884;
+    font-size: 25px;
+    color: #0d1884;
+}
+
+footer .social-media-handle .fa-facebook{
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+footer .social-media-handle i:hover{
+    transition: 1s;
+    color: white;
+    background-color: #0d1884;
+}
+
+.copyright-content {
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #0d1884;
+}
+
+.copyright-content p{
+    font-size: 10px;
+    color: white;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* This is to make the website responsive */
+    /* This is for when the width of the screen is 1300px, the responsive nav bar should display */
+@media screen and (max-width: 1300px){
+    .menu-container {
+        display: block;
+    }
+
+    .header-link-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1270px){
+    .footer-content {
+        margin-right: 100px;
+    }
+
+    .main-banner-content img{
+        width: 525px;
+        margin-top: 50px;
+    }
+
+    .footer-container p{
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 1125px){
+    .download-content-left {
+        margin-left: -10px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .footer-content {
+        margin-right: 85px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .main-banner-content, .agro-sponsorship-content {
+        display: block;
+    }
+
+    .main-banner-content h1, p{
+        text-align: center;
+    }
+
+    .main-banner-content-left-p1 {
+        width: 100%;
+        margin-left: -5%;
+    }
+
+    .main-banner-content img{
+        width: 700px;
+    }
+
+    .agro-sponsorship-content img{
+        width: 600px;
+    }
+
+    .agro-sponsorship-content h3{
+        text-align: center;
+    }
+
+    .agro-sponsorship-content-p {
+        width: 100%;
+        margin-left: -5%;
+    }
+}
+
+@media screen and (max-width: 970px){
+    .download-content {
+        display: block;
+    }
+    
+    .download-content-right {
+        margin-left: -10px;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .footer-container {
+        display: block;
+    }
+
+    .company-content {
+        margin-right: 300px;
+    }
+
+    .resources-content {
+        margin-right: 220px;
+    }
+
+    .footer-content-div {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .main-banner-content img{
+        width: 97%;
+        height: 97%;
+    }
+
+    .agro-sponsorship-content img{
+        width: 97%;
+        height: 97%;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .company-content {
+        margin-right: 200px;
+    }
+
+    .resources-content {
+        margin-right: 120px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .company-content {
+        margin-right: 150px;
+    }
+
+    .resources-content {
+        margin-right: 70px;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .footer-content-div {
+        display: block;
+    }
+
+    .products-content {
+        margin-top: 40px;
+    }
+
+    .contact-content {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 420px){
+   .download-content-right {
+       display: block;
+   }
+
+   .googleplay-download {
+       margin-left: -30px;
+   }
+}

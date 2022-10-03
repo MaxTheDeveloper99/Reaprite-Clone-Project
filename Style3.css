@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background:  #1e272e;
+}
+
+header img{
+    width: 110px;
+    margin-top: 70px;
+    margin-left: 9%;
+}
+
+    /* This is for all h2 tags in the body */
+main h2{
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 2.3em;
+}
+
+    /* This is for all h3 tags in the body */
+main h3{
+    font-family: "Open ssns", sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 1.6em; 
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+    /* This is for the image in the main */
+main img{
+    width: 520px;
+    height: 210px;
+}
+
+.signin-section {
+    margin-top: 150px;
+    margin-left: 9%;
+    display: inline-flex;
+}
+
+    /* This is for all the p tag in the body */
+main p{
+    color:  white;
+    font-family: "Open sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+    /* This is for the input in the body */
+main input{
+    width: 550px;
+    padding-left: 15px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    background: transparent;
+    border: 1px solid white;
+    font-size: 14px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: none;
+    outline: none;
+    margin-top: 20px;
+}
+
+main input:focus{
+    border: 1px solid #182be3;
+}
+
+    /* This is for the sign in section */
+.signin-section-right {
+    margin-left: 50px;
+}
+
+    /* This is for the button tag */
+main button{
+    background-color: #0d1884;
+    font-size: 16px;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+}
+
+main .account-content {
+    display: inline-flex;
+    margin-top: 20px;
+}
+
+    /* This is for all the a tag in the body */
+main a{
+    color: #0d1884;
+    margin-left: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: "Open sans", sans-serif;
+}
+
+main a:hover{
+    color: #182be3;
+}
+
+.forgot-link {
+    floa: right;
+    margin-top: -20px;
+    margin-left: 60%;
+}
+
+@media screen and (max-width: 1300px){
+    main input{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    main input{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .signin-section {
+        margin-left: 3%;
+    }
+
+    header img{
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width:1050px){
+    .signin-section {
+        display: block;
+    }
+
+    header img{
+        position: relative;
+        top: 100px;
+        margin-left: 7%;
+    }
+
+    main {
+        margin-bottom: 10px;
+    }
+
+    main input{
+        width: 700px;
+    }
+
+    .signin-section-left {
+        margin-left: 5%;
+        margin-bottom: 50px;
+    }
+
+    .signin-section-left img{
+        width: 720px;
+    }
+}
+
+@media screen and (max-width: 860px){
+    main input{
+        width: 600px;
+    }
+
+    .signin-section-left img{
+        width: 620px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    main input{
+        width: 500px;
+    }
+
+    .signin-section-left img{
+        width: 520px;
+    }
+}
+
+@media screen and (max-width: 630px){
+    main input{
+        width: 400px;
+    }
+
+    .signin-section-left img{
+        width: 420px;
+    }
+}
+
+@media screen and (max-width: 530px){
+    main input{
+        width: 300px;
+    }
+
+    .signin-section-left img{
+        width: 320px;
+    }
+
+    .signin-section-right {
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 430px){
+    main input{
+        width: 260px;
+    }
+
+    .signin-section-left img{
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    main input{
+        width: 230px;
+    }
+
+    .signin-section-left img{
+        width: 250px;
+    }
+}

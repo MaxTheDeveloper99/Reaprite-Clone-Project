@@ -1,0 +1,1296 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+
+}
+
+.top-information {
+    background-color: #0d1884;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.top-information a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+    /* This is for the links in the header */
+.header-link-nav {
+    position: sticky;
+    top: 0;
+    z-index: 4000;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+img {
+    z-index: 1;
+}
+
+.header-link-nav ul{
+    margin-top: 10px;
+    display: inline-flex;
+    background: white;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding-top: 20px;
+    margin-top: -16px;
+    z-index: 3000;
+}
+
+.header-link-nav li {
+    list-style: none;
+}
+
+.header-link-nav li a{
+    color: #6e727f;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.header-link-nav ul a:hover{
+    transition: 1s;
+    color: #0d1884;
+}
+
+    /* This is for the savings and the links under it */
+.header-link-nav ul .arrow{
+    width: 13px;
+    margin-left: -1px;
+    margin-left: 5px;
+}
+
+.header-link-nav label p{
+    color: #6e727f;
+}
+
+.header-link-nav ul label{
+    display: inline-flex;
+    margin-left: 30px;
+}
+
+.header-link-nav .dropdown-content {
+    width: auto;
+    height: auto;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    background-color: white;
+    z-index: 1000;
+    margin-top: 100px;
+    border: 1px solid rgba(0,0,0,.15);
+    display: block;
+    border-radius: .25rem;
+    margin-left: -80px;
+    margin-top: 0px;
+    margin-top: 50px;
+    margin-right: -80px;
+    margin-bottom: -190px;
+    display: none;
+}
+
+.header-link-nav .dropdown-content a{
+    color: #6e727f;
+    width: 150px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    padding-left: 7px;
+    display: block;
+
+}
+
+.header-link-nav ul #service:checked ~ .dropdown-content{
+    display: block;
+}
+
+.header-link-nav input[type="checkbox"] {
+    display: none;
+}
+
+.header-link-nav .dropdown-content a:hover {
+    color: #6e727f;
+    background-color: lavender;
+}
+
+.header-link-nav .about {
+    margin-left: 300px;
+}
+
+.header-link-nav .header-li {
+    margin-top: 12px;
+}
+
+.header-link-nav .account-li {
+    margin-top: 10px;
+}
+
+/* This is for the head link */
+.header-link-nav .account {
+    background-color: #0d1884;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.header-link-nav .account:hover {
+    background-color: #182be3;
+    color: white;
+}
+
+.header-link-nav img{
+    width: 200px;
+    margin-left: 50px;
+}
+
+    /* This is for the menu bar that will show when the width of the screen is small */
+.menu-container {
+    background: white;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 80px;  
+    position: sticky;
+    top: 0;
+    z-index: 4000;
+    display: none;
+}
+
+    /* This is to style the logo in the responsive menu bar */
+.menu-container a > img {
+    width: 200px;
+    margin-left: 7%;
+    margin-top: 10px;
+}
+
+.menu-container li{
+    list-style: none;
+}
+
+.menu-container a{
+    text-decoration: none;
+}
+
+    /* This is to make the cancel icon not to display */
+#cancel {
+    display: none;
+}
+
+    /* This is to make the responsive nav bar not to diaplay */
+.header-link-nav2 {
+    display: none;
+}
+
+    /* This is for when the menu icon is clicked, the cancel icon should display */
+#check:checked ~ label #cancel{
+    display: block;
+}
+
+    /* This is for when the menu icon is clicked, the nav bar shoould display */
+#check:checked ~ .header-link-nav2{
+    display: block;
+}
+
+    /* This is for when the menu icon is clicked, the menu bar should not display */
+#check:checked ~ label #menu{
+    display: none;
+}
+
+    /* This to style the responsive nav bar */
+.header-link-nav2 {
+    width: 88%;
+    height: 364%;
+    background: white;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    margin-left: 7%;
+    border-top: 1px solid #182be3;
+    border-bottom: 1px solid #182be3;
+}
+
+.horizontal-line {
+    width: 100%;
+    height: 1px;
+    background-color: #182be3;
+}
+
+.header-link-nav2 a, label p{
+    color: #6e727f;
+}
+
+.check:hover {
+    cursor: pointer;
+}
+
+.header-link-nav2 label p{
+    margin-left: 2%;
+}
+
+.header-link-nav2 li{
+    margin-left: 3%;
+    margin-top: 20px;
+}
+
+.header-link-nav2 .header-li-about {
+    padding-top: 15px;
+}
+
+.header-link-nav2 .account-li {
+    margin-left: 2%;
+}
+
+.header-link-nav2 .account {
+    background-color: #0d1884;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.header-link-nav2 .account:hover {
+    background-color: #182be3;
+    color: white;
+}
+
+    /* This is to position the menu and cancel icon */
+.check {
+    float: right;
+    margin-right: 5%;
+    margin-top: 20px;
+}
+
+    /* This is to style the dropdown under the services */
+.header-link-nav2 .dropdown-content {
+    width: 150px;
+    height: auto;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    background-color: white;
+    z-index: 1000;
+    border: 1px solid rgba(0,0,0,.15);
+    display: block;
+    border-radius: .25rem;
+    display: none;
+    margin-left: 3%;
+    margin-bottom: -180px;
+}
+
+    /* This is to style the dropdown link under the services */
+.header-link-nav2 .dropdown-content a{
+    color: #6e727f;
+    width: 140px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    padding-left: 7px;
+    display: block;
+
+}
+
+.header-link-nav2 .dropdown-content a:hover{
+    background-color: lavender;
+}
+
+    /* This is for when the services is clicked, the dropdown link should display */
+.header-link-nav2 ul #services:checked ~ .dropdown-content{
+    display: block;
+}
+
+.header-link-nav2 ul #services:checked ~ .header-li-hide{
+    display: none;
+}
+
+.header-link-nav2 ul #services:checked ~ .horizontal-line{
+    display: none;
+}
+
+.menu-container input[type="checkbox"] {
+    display: none;
+}
+
+.main-content {
+    margin-left: 7%;
+    display: inline-flex;
+}
+
+.main-content h1{
+    color: #0d1884;
+    font-size: 54px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+}
+
+.main-cotent-div p{
+    color: #6e727f;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.main-cotent-div1 {
+    margin-top: 90px;
+}
+
+.main-cotent-div1 .sign-p{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #6e727f;
+}
+
+.main-cotent-div1 .earn {
+    margin-top: -1px;
+    margin-left: -1px;
+    color: #6e727f;
+}
+
+.main-cotent-div1 p{
+    margin-top: 50px;
+}
+
+.main-cotent-div1 p > a{
+    color: #0d1884;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 1px solid #0d1884;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.main-cotent-div1 p > a:hover{
+    background-color: #0d1884;
+    border: 1px solid #0d1884;
+    color: white;
+}
+
+.main-cotent-div2 {
+    margin-left: 120px;
+}
+
+.main-cotent-div2 img{
+    width: 560px;
+}
+
+.reaprite-motto {
+    margin-top: 40px;
+}
+
+.reaprite-motto h2{
+    font-size: 36px;
+    font-weight: bolder;
+    color: #0d1884;
+    font-family: "Roboto", sans-serif;
+}
+
+.reaprite-motto p{
+    color: #6e727f;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+    /* This is for the why choose reaprite */
+
+.reasons-div {
+    padding-top: 10px;
+    padding-bottom: 80px;
+    margin-top: 80px;
+    background-color: lavender;
+    height: auto;
+    display: inline-flex;
+    width: 100%;
+}
+
+.reasons-div-left {
+    padding-left: 7%;
+}
+
+.platform {
+    position: relative;
+    left: -20px;
+}
+
+.reasons-div-left h2{
+    font-size: 36px;
+    font-weight: bolder;
+    color: #0d1884;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 20px;
+    margin-top: 130px;
+}
+
+.reasons-div-left p{
+    color: #6e727f;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+.reasons-div img{
+    width: 600px;
+    margin-left: 180px;
+}
+
+    /* This is for the Start Growing Your Money With These Easy Steps */
+.download-div img{
+    width: 250px;
+}
+
+.download-div {
+    margin-top: 60px;
+    display: inline-flex;
+    margin-left: 7%
+}
+
+.download-div-p-left {
+    margin-right: 30px;
+}
+
+.download-div-left {
+    display: inline-flex;
+}
+
+.download-div-left p{
+    margin-bottom: 15px;;
+}
+
+.download-div-p-left p:nth-child(1) {
+    margin-top: 200px;
+}
+
+.download-div-p-left p:nth-child(2),p:nth-child(3){
+    margin-left: 20px;
+}
+
+.download-div-left a{
+    text-decoration: none;
+    color: #6e727f;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bolder;
+}
+
+.download-div-left a:hover{
+    color: #0d1884;
+}
+
+.download-div-right {
+    margin-left: 200px;
+    margin-top: 150px;
+}
+
+.download-div-right h2{
+    color: #0d1884;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+    width: 600px;
+}
+
+.download-p1 {
+    color: #0d1884;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+.download-div-right .download-p{
+    margin-left: -1px;
+    margin-top: 20px;
+    width: 600px;
+    color: #6e727f;
+}
+
+    /* This is for the what we offer */
+.offer-section {
+    background-color: lavender;
+    width: 100%;
+    height: auto;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    margin-top: 50px;
+    padding-top: 100px;
+    z-index: -1;
+}
+
+.offer-section h2{
+    font-size: 36px;
+    color: #0d1884;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    line-height: 1.2;
+}
+
+.offer-section-box {
+    display: inline-flex;
+    margin-top: 50px;
+}
+
+.offer-section-div {
+    display: inline-flex;
+}
+
+.offer-section-box1 img{
+    width: 50px;
+}
+
+.offer-section-box2 img{
+    width: 60px;
+}
+
+.offer-section-box3 img{
+    width: 50px;
+}
+
+.offer-section-box h3{
+    font-size: ;
+    color: #0d1884;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+}
+
+.offer-section-box p{
+    line-height: 1.8;
+    color: #6e727f;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.offer-section-boxes {
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow:0 1px 1px rgba(0, 0, 0, 0.22);
+    height: 410px;
+    margin-right: 40px;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-top: 40px;
+    z-index: 1;
+}
+
+.offer-section-boxes a{
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #0d1884;
+    font-weight: 600;
+}
+
+.offer-section-box .box-link{
+    margin-top: 50px;
+}
+
+.box-link3 {
+    margin-top: 80px;
+}
+
+.offer-section-boxes:hover {
+    transition: 1s;
+    background-color: #edeeef;
+}
+
+.offer-section-boxes:hover .box-link{
+    margin-left: 12px;
+    transform: scale(1.1);
+}
+
+.offer-section-boxes:hover .box-link3{
+    margin-left: 12px;
+    transform: scale(1.1);
+}
+
+
+    /* This is for the high level security */
+.protect-content {
+    display: inline-flex;
+    margin-top: 30px;
+    margin-left: 7%;
+    max-width: 100%;
+}
+
+.protect-content-left {
+    margin-right: 10%;
+}
+
+.protect-content-left-div1:hover .protect-content-left-img-div1 i{
+    transition: 1s;
+    background-color: #182be3;
+    border-radius: 100px;
+}
+
+.protect-content-left-img-div1 {
+    background-color: #0d1884;
+    margin-top: 13px;
+    border-radius: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.protect-content-left-img-div1 i{
+    color: white;
+    font-size: 40px;
+    padding: 8px;
+}
+
+.protect-content-left h3{
+    color: #0d1884;
+    font-size: 36px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    margin-top: 40px;
+}
+
+.protect-content-left img{
+    width: 90px;
+}
+
+.protect-content-left p{
+    color: #0d1884;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    width: 530px;
+    text-align: left;
+}
+
+.protect-content-right img{
+    width: 320px;
+}
+
+.protect-content-left-div1 {
+    display: inline-flex;
+    margin-left: -20px;
+}
+
+.protect-content-left-p-div1 {
+    margin-top: 20px;
+}
+
+    /* This is for syling the downloading of reaprite */
+.download-content {
+    background-image: url(./Images/customer-bg.jpg);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-top: 60px;
+    width: 85%;
+    margin-left: 7%;
+    display: inline-flex;
+}
+
+.download-content-left {
+    margin-left: 200px;
+}
+
+.download-content-left h3{
+    font-size: 38px;
+    color: #0d1884;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.download-content-right {
+    display: inline-flex;
+}
+
+.download-content-right i{
+    color: #0d1884;
+    font-size: 35px;
+}
+
+.download-content-right p:nth-child(1){
+    color: #0d1884;
+    font-size: 10px;
+}
+
+.apple-download {
+    margin-right: 60px;
+}
+
+.apple-download-text {
+    margin-left: 15px;
+}
+
+.apple-download-text p:nth-child(1){
+    margin-left: -20px;
+}
+
+.download-content-right {
+    margin-left: 150px;
+    margin-top: 40px;
+}
+
+.download-content-right .apple-download, .googleplay-download{
+    padding-left: 15px;
+    height: 50px;
+    padding-top: 10px;
+    padding-right: 15px;
+    border-radius: 5px;
+}
+
+.download-content-right .apple-download:hover, .googleplay-download:hover{
+    cursor: pointer;
+    transition: 1s;
+    background-color: #0d1884;
+}
+
+.apple-download:hover i{
+    color: white;
+}
+
+.apple-download:hover .apple-download-text p{
+    color: white;
+}
+
+.googleplay-download:hover i{
+    color: white;
+}
+
+.googleplay-download:hover .googleplay-download-text p{
+    color: white;
+}
+
+.download-content-right p:nth-child(2){
+    font-size: 14px;
+    font-weight: 500;
+    color: #0d1884;;
+}
+
+.googleplay-download-text {
+    margin-left: 15px;
+}
+
+.googleplay-download-text p:nth-child(1){
+    margin-left: -10px;
+}
+
+.apple-download, .googleplay-download{
+    display: inline-flex;
+}
+
+
+    /* This is for styling the elements in the footer */
+.footer-container {
+    display: inline-flex;
+    margin-top: 70px;
+    margin-left: 10%;
+}
+
+.footer-content-div {
+    display: inline-flex;
+}
+
+.footer-container a:hover{
+    text-decoration: underline;
+}
+
+.footer-container a{
+    color: #6e727f;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.footer-container h3{
+    font-size: 18px;
+    color: #6e727f;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+.footer-container .hours{
+    color: #6e727f;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.footer-container .footer-p{
+    margin-left: -1px;
+}
+
+.company-content, .products-content, .resources-content{
+    margin-right: 170px;
+}
+
+.address-content p{
+    color: #6e727f;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 9%;
+    margin-top: 60px;
+}
+
+.social-media-handle {
+    margin-left: 9%;
+    margin-top: 30px;
+}
+
+footer .social-media-handle i{
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 1px solid #0d1884;
+    font-size: 25px;
+    color: #0d1884;
+}
+
+footer .social-media-handle .fa-facebook{
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+footer .social-media-handle i:hover{
+    transition: 1s;
+    color: white;
+    background-color: #0d1884;
+}
+
+.copyright-content {
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #0d1884;
+}
+
+.copyright-content p{
+    font-size: 10px;
+    color: white;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+}
+
+    /* This is for styling the arrow that if clicked it will scroll up */
+.arrowup-div {
+    height: 2600px;
+    width: 45px;
+    margin-right: 20px;
+    float: right;
+    margin-top: -2620px;
+}
+
+.arrowup-div i{
+    float: right;
+    margin-top: -60px;
+    margin-right: 0px;
+    color: white;
+    background-color: black;
+    border-radius: 100px;
+    font-size: 26px;
+    padding: 10px;
+    position: sticky;
+    margin-left: 100px;
+    top: 550px;
+}
+
+.arrowup-div i:hover {
+    background-color: #182be3;
+}
+
+    /* This is to make the website responsive */
+
+    /* This is for when the width of the screen is 1300px, the responsive nav bar should display */
+@media screen and (max-width: 1300px){
+    .menu-container {
+        display: block;
+    }
+
+    .header-link-nav {
+        display: none;
+    }
+    
+    .download-div-right {
+        margin-left: 60px;
+    }
+
+    .offer-section-boxes {
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 1125px){
+    .main-cotent-div1 h1{
+        width: 350px;
+    }
+
+    .main-cotent-div1 .sign-p, .earn{
+        width: 450px;
+    }
+
+    .main-content img{
+        width: 530px;
+        margin-left: -90px;
+    }
+
+    .reasons-div h2{
+        width: 400px;
+    }
+
+    .reasons-div p{
+        width: 390px;
+    }
+
+    .reasons-div-left {
+        margin-left: -50px;
+    }
+
+    .reasons-div img{
+        width: 500px;
+        margin-left: 0px;
+        margin-left: 50px;
+    }
+
+    .download-div-left img{
+        width: 200px;
+    }
+
+    .download-div-right {
+        margin-left: 0px;
+        margin-left: 100px;
+        margin-top: 0px;
+        margin-top: 100px;
+    }
+
+    .download-div-right h2{
+        width: 450px;
+    }
+
+    .download-div-right .download-p{
+        width: 450px;
+    }
+
+    .offer-section-boxes {
+        width: 230px;
+        margin-right: 0;
+        margin-left: 30px;
+    }
+
+    .offer-section-box1 {
+        margin-left: -10px;
+    }
+
+    .protect-content-right img{
+        width: 280px;
+    }
+
+    .protect-content-left p{
+        width: 400px;
+    }
+
+    .download-content-left {
+        margin-left: -10px;
+    }
+
+    .footer-content {
+        margin-right: 100px;
+    }
+
+    .protect-content-left-img-div1 {
+        width: auto;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 1110px){
+    .main-content img{
+        width: 480px;
+        height: 460px;
+        margin-left: -90px;
+    }
+
+    .download-div-p-left {
+        margin-top: -60px;
+        margin-left: -40px;
+    }
+
+    .download-div-p-left p{
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 1052px){
+    .main-content img{
+        width: 450px;
+        height: 460px;
+        margin-left: -90px;
+    }
+
+    .main-cotent-div1 {
+        margin-left: -50px;
+    }
+
+    .reasons-div img{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 970px){
+    .main-content {
+        display: block;
+        margin-left: 14%;
+    }
+
+    .main-content h1{
+        width: 670px;
+    }
+
+    .main-content img{
+        width: 770px;
+        height: 550px;
+        margin-top: 50px;
+        margin-left: -25%;
+    }
+
+    .reasons-div {
+        display: block;
+    }
+
+    .reasons-div-left {
+        margin-left: 25%;
+    }
+
+    .reasons-div-left p,h2{
+        text-align: center;
+    }
+
+    .reasons-div-right img{
+        width: 800px;
+        margin-left: 8%;
+        margin-top: 20px;
+    }
+
+    .offer-section-box {
+        display: block;
+    }
+
+    .offer-section-box3 {
+        margin-top: 50px;
+    }
+
+    .download-div-right h2{
+        width: 330px;
+        text-align: left;
+    }
+
+    .download-div-right {
+        margin-left: 0px;
+        margin-left: 50px;
+    }
+
+    .download-div-right .download-p{
+        width: 330px;
+    }
+
+    .protect-content {
+        display: block;
+    }
+
+    .protect-content p{
+        width:580px;
+        text-align: left;
+    }
+
+    .protect-content-right img{
+        width: 500px;
+        margin-left: 12%;
+        margin-top: 50px;
+    }
+
+    .download-content {
+        display: block;
+    }
+    
+    .download-content-right {
+        margin-left: -10px;
+    }
+
+    .footer-container {
+        display: block;
+    }
+
+    .footer-content-div {
+        margin-left: 100px;
+    }
+
+    .footer-content {
+        margin-bottom: 50px;
+    }
+
+    .company-content {
+        margin-right: 63%;
+    }
+
+    .resources-content {
+        margin-right: 36%;
+    }
+}
+
+@media screen and (max-width: 890px){
+    .reasons-div-right img{
+        width: 600px;
+        margin-left: 15%;
+        margin-top: 20px;
+    }
+
+    .main-content img{
+        width: 600px;
+        height: 550px;
+        margin-top: 50px;
+        margin-left: -25%;
+    }
+}
+
+@media screen and (max-width: 740px){
+    .main-content h1{
+        width: 80%;
+    }
+
+    .main-content .sign-p, .earn{
+        width: 80%;
+    }
+
+    .main-cotent-div1 {
+        margin-left: 0px;
+    }
+
+    .main-content img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .reasons-div .reasons-div-left{
+        margin-left: 14%;
+    }
+
+    .reasons-div .reasons-div-right img{
+        width: 85%;
+        margin-left: 8%;
+    }
+
+    .download-div {
+        display: block;
+    }
+
+    .download-div-left {
+        margin-left: 8%;
+    }
+
+    .offer-section-box {
+        display: block;
+    }
+
+    .offer-section-div {
+        display: block;
+    }
+
+    .offer-section-box2, .offer-section-box3{
+        margin-left: -10px;
+        margin-top: 40px;
+    }
+
+    .offer-section-boxes {
+        width: 70%;
+    }
+
+    .offer-section-boxes img{
+        width: 70px;
+        margin-left: 150px;
+        margin-bottom: 10px;
+    }
+
+    .protect-content-left p{
+        width: 100%;
+    }
+
+    .protect-content-right img{
+        width: 70%;
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .footer-container {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .footer-container {
+        margin-left: -50px;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .reasons-div .reasons-div-left {
+        margin-left: 0px;
+    }
+
+    .reasons-div .reasons-div-left h2{
+        width: 80%;
+    }
+
+    .reasons-div .reasons-div-left p{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .download-div .download-div-right {
+        margin-left: 0;
+    }
+
+    .download-div .download-div-left img{
+        width: 80%;
+    }
+
+    .download-div .download-div-left .download-div-p-left{
+        margin-top: -100px;
+    }
+
+    .download-div .download-div-right h2{
+        width: 80%;
+    }
+
+    .download-div .download-div-right p{
+        width: 80%;
+    }
+
+    .footer-container {
+        display: block;
+    }
+
+    .footer-content-div {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .download-content-right {
+        display: block;
+    }
+ 
+    .googleplay-download {
+        margin-left: -30px;
+    }
+}
